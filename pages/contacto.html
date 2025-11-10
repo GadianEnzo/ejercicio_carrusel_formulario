@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deadlocket</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container my-4">
+        <a class="navbar-brand" href="#"><img src="../img/icon.png" width="64" height="64"/> Deadlock</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto text-end">
+                    
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Personajes</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Guias</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link active" href="#">Contacto</a>
+                    </li>
+                    
+            </ul>
+        </div>
+    </div>
+    </nav>
+
+    <!-- Fin del nav bar -->
+
+    <!-- Header -->
+            <div class="col bg-warning text-center py-2">
+                <header><b>Pagina en edición - 28/10/2025</b></header>
+            </div>
+
+    <!-- Fin Header -->
+
+    <!-- Caja de contenido basica -->
+    
+<main>
+    <div class="container my-4">
+        <div class="row my-4">
+            <div class="col bg-light text-center py-2 rounded-3">
+                <h3>Formulario de contacto</h3>
+                <p>Si tienes alguna duda, sugerencia o simplemente quieres ponerte en contacto conmigo, no dudes en rellenar el siguiente formulario. ¡Estaré encantado de leerte!</p>
+            </div>
+
+        <div class="container-fluid my-4 rounded-3">
+            <div class="col-lg-9 col-md-12 col-sm-12 mx-auto">
+
+            <form 
+                class="needs-validation"
+                action="https://formspree.io/f/xzzklypw"
+                method="POST"
+                novalidate
+            >
+
+                <!-- falta añadir validacion a los formularios, la chuletilla está en el chatgpt -->
+
+                <div class="mb-3">
+                    <label for="NombreContacto" class="form-label">Nombre</label>
+                    <input type="text" class="form-control shadow bg-light" id="NombreContacto" placeholder="Introduce tu nombre aquí" required>
+                    <div>
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="EmailContacto" class="form-label">Correo Electrónico</label>
+                    <input type="email" class="form-control shadow bg-light" id="EmailContacto" placeholder="Introduce tu correo electrónico aquí">
+                </div>
+                <div class="mb-3">
+                    <label for="MensajeContacto" class="form-label">Mensaje</label>
+                    <textarea class="form-control shadow bg-light" name="MensajeContacto" rows="5"></textarea>
+                </div>
+                <div class="row-lg-6 row-md-6 row-sm-12 g-3">
+                    <button type="submit" class="btn btn-primary shadow was-validated">Enviar</button>
+                    <button type="reset" class="btn btn-secondary shadow float-end">Borrar</button>
+                </div>
+            </form> 
+
+        </div>
+    </div>
+</main>
+
+    <!-- Footer -->
+
+    <div class="col justify-contenet-between py-3 border-top text-center bg-dark text-white text-opacity-50">
+                <footer>
+                    <h6>© 2025 Alejandro Martin Arranz</h6>
+                </footer>
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+
+</html>
